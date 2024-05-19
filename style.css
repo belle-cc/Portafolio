@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: inherit;
+    text-align: center;
+}
+
+body {
+    font-family: Raleway, sans-serif;
+    background: linear-gradient(to right, #C8F5CA, #A5CAA6, #67A06A);
+}
+
+h2 {
+    text-align: center;
+    font-size: xx-large;
+    margin: 25px;
+}
+
+.logo-nombre {
+    font-weight: bold;
+}
+
+.logo-contacto {
+    color: #464646;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%; /* Ajuste del ancho */
+    margin: 20px auto; /* Centrar el contenedor */
+    text-align: center;
+}
+
+.img-portada {
+    width: 30%; /* Ajustar el tamaño al 30% del contenedor */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para mejor diseño */
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    margin: 0 auto;
+}
+
+.img-portada:hover {
+    transform: scale(0.95); /* Reducción al hacer hover */
+    opacity: 0.9;
+}
+
+.enlaces a {
+    color: #000000;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.enlaces {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.titulo-habilidad, .titulo-pasatiempo, .formaciones h2, .experiencias h2 {
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+.sobre-mi {
+    padding: 16px;
+    width: 80%; /* Ajuste del ancho */
+    margin: 0 auto; /* Centrar el contenedor */
+    text-align: center;
+}
+
+.habilidad_s, .pasatiempo_s {
+    flex-basis: 120px;
+    height: 100px;
+    padding: 10px;
+    margin: 10px;
+    background-color: #67a06a6b;
+    font-weight: bold;
+    flex-grow: 1;
+}
+
+.pasatiempos .pasatiempo_s img, .habilidades .habilidad_s img {
+    filter: brightness(0) saturate(100%) hue-rotate(120deg) sepia(100%) invert(100%) opacity(80%);
+    max-width: 100px;
+    height: auto;
+}
+
+.formaciones, .experiencias {
+    padding: 20px;
+    margin: 20px auto;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 80%; /* Ajuste del ancho */
+}
+
+.formacion-lista, .experiencia_s {
+    padding: 20px;
+    background-color: #67a06a6b;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.formacion-lista img, .experiencia_s img {
+    width: 50px; /* Ajustar tamaño de los logos */
+    margin-bottom: 10px;
+}
+
+.formacion-lista .subtitulo, .experiencia_s .subtitul-exp {
+    font-weight: bold;
+    font-size: 110%;
+}
+
+.proyectos-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Alinear proyectos en filas */
+    margin: 0 auto;
+}
+
+.proyecto_s {
+    width: 48%; /* Ancho ajustado para dos proyectos por fila */
+    margin-bottom: 20px; /* Espacio entre proyectos */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para mejor diseño */
+    border-radius: 10px; /* Bordes redondeados */
+    background-color: #fff; /* Fondo blanco */
+    padding: 20px; /* Espaciado interno */
+    transition: transform 0.3s ease-in-out; /* Transición al hacer hover */
+}
+
+.proyecto_s:hover {
+    transform: scale(1.05); /* Aumentar ligeramente el tamaño al hacer hover */
+}
+
+.proyecto-img {
+    width: 100%;
+    height: auto; /* Asegura que la imagen se ajuste al contenedor */
+    border-bottom: 1px solid #ddd; /* Línea divisoria debajo de la imagen */
+    padding-bottom: 10px; /* Espaciado debajo de la imagen */
+    border-radius: 10px 10px 0 0; /* Bordes redondeados en la parte superior */
+}
+
+.proyecto_s p {
+    font-size: 1.2em; /* Tamaño de fuente */
+    color: #666; /* Color de texto */
+    margin-top: 10px; /* Espacio superior */
+    text-align: center; /* Alinear texto al centro */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #464646;
+    color: #fff;
+}
